@@ -4,7 +4,8 @@ import smtplib
 from email.mime.text import MIMEText
 
 try:
-    url = "http://112.94.64.160:8023/api/public/gzhbapp/airQuality/getairQualityTimes/GetAllRealTimeData"
+    # url = "http://112.94.64.160:8023/api/public/gzhbapp/airQuality/getairQualityTimes/GetAllRealTimeData"
+    url = "http://112.94.69.56:8023/api/public/gzhbapp/airQuality/getairQualityTimes/GetAllRealTimeData"
     response=rq.get(url)
     header=response.headers
     curtime=header['Date']
